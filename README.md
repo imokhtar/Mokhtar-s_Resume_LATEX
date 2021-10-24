@@ -16,7 +16,7 @@ Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.co
 This template attempts to **look clean**, highlight **details**, be a **single page**, and allow useful **LaTeX templating**.
 
 ## Preview
-![alt tag](Mokhtar's Resume.pdf)
+![alt tag](Mokhtar's Resume.png)
 
 ## License
     Copyright 2014 Debarghya Das
