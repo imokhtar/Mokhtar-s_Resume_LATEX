@@ -1,3 +1,6 @@
+## Preview
+![alt text](https://github.com/imokhtar/Mokhtar-s_Resume_LATEX/blob/main/Mokhtar's%20Resume.png?raw=true)
+
 Deedy-Resume
 =========================
 
@@ -14,9 +17,6 @@ It is licensed under the Apache License 2.0.
 Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.com/template/moderncv-cv-and-cover-letter)  and the [**friggeri-cv**](https://github.com/afriggeri/cv) look great if you're looking for a multi-page resume with numerous citations, but usually imperfect for making a thorough, single-page one. A lot of companies today search resumes based on [keywords](http://www.businessinsider.com/most-big-companies-have-a-tracking-system-that-scans-your-resume-for-keywords-2012-1) but at the same time require/prefer a one-page resume, especially for undergraduates. 
 
 This template attempts to **look clean**, highlight **details**, be a **single page**, and allow useful **LaTeX templating**.
-
-## Preview
-![alt tag](Mokhtar's Resume.png)
 
 ## License
     Copyright 2014 Debarghya Das
