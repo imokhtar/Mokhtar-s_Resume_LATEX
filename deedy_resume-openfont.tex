@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ahmed}{Mokhtar}{
+\urlstyle{same}\href{mailto:ahmed.s.mokhtar@outlook.com}{ahmed.s.mokhtar@outlook.com} | \href{tel:+201116521603 }{+201116521603} | Giza - Egypt\\ \href{https://www.linkedin.com/in/ahmed-s-mokhtar/}{linkedin.com/in/ahmed-s-mokhtar} | \href{https://github.com/imokhtar}{github.com/imokhtar}\\
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Abjjad}
+\location{| Amman, Jordan}
+\descript{Senior iOS Developer | Nov 2020 - Present}
+\descript{Part Time iOS Developer | Jun 2019 - Nov2020}
+\vspace{\topsep} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Led and shipped Abjjad iOS app - an app that was featured as app of the day and  App Store stories by Apple. 
+\item Developed an eReader framework to render Abjjad books. The framework produces a cutting-edge reading experience by utilizing TextKit and CoreText.
+\item Decreased Code Rigidity by refactoring, writing characterization tests to bottleneck modules.
+\item Enhanced app performance and memory footprint by utilizing Xcode profiling tools.
+\item Made the code scalable, modular, and testable by applying Clean Architecture + MVVM.
+\item Added support for iPadOS features such as multi-windows and multitasking.
+\item Implemented CI/CD pipelines which builds, runs tests, and publishes to App Store.
+\item Fastened app start time and reduced app size by linking app dependencies statically.
+\item Enabled marketing team to attribute and measure the conversions of the running ad campaigns using different tools and techniques which are compatible with iOS 14.6 and later 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BlaBla Connect}
+\location{ | Cairo, Egypt}
+\descript{iOS Developer | Dec 2018 – Oct 2020 }
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Delivered robust and maintainable code by following clean code best practices, applying the clean architecture to the project, and unit testing 90\% of the code.
+\item Developed ID Verification feature by using Vision and CoreImage frameworks.
+\item Ensured system integrity by writing fail-proof UI tests.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nagwa}
+\location{ | Cairo, Egypt}
+\descript{Mathematics Content Editor | Nov 2017 – Nov 2018 }
+\vspace{\topsep}
+\begin{tightemize}
+\item Worked on classifying and indexing content based on its learning objectives.
+\item helped manage curriculum plans to deliver high-quality math content.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Asyut University}
+\descript{Bachelor degree in Mathematics}
+\location{2011 | Asyut, EG}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages \& SDKs}
+Swift (expert) \textbullet{} Objective-C (proficient) \textbullet{} Dart\ (proficient) \textbullet{} Python \textbullet{} JavaScript\ (prior)
+\sectionsep
+\subsection{Platforms}
+iOS \textbullet{} Flutter \textbullet{} Backend\ (prior)
+\sectionsep
+\subsection{Frameworks \& Libraries}
+SwiftUI \textbullet{} UIKit \textbullet{} Firebase \textbullet{} Realm \textbullet{} \\CoreText \textbullet{} TextKit \textbullet{} GCD \textbullet{} CoreImage \textbullet{} Vision \textbullet{} Travis \textbullet{} NodeJS\ (prior) \textbullet{} SQLite \textbullet{} SignalR \textbullet{} Stripe
+\sectionsep
+\subsection{Software Skills}
+Design Patterns \textbullet{} OOP \textbullet{} OOD \textbullet{}\\ Reactive Programming \textbullet{} \\ Functional Programming \textbullet{} Unit Testing \textbullet{} UI Testing
+\sectionsep
+\subsection{Other Skills}
+Abstract thinking \textbullet{} Agile (Scrum)
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Own Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Own Projects}
+\subsection{Egypt Trains Android}
+An app to show the timetables of ENR.
+I leveraged knowledge in Flutter, BLoC, Dart, RxDart, Clean Architecture.
+\sectionsep
+\subsection{Egypt Trains iOS}
+Since it was launched in 2019, it is among the top 5 Travel apps in the app store with a 4.6 rate from over 3k users and 100\% crash-free users
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Languages}
+Arabic (native) \textbullet{} English (very good)
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hobbies}
+Walking \textbullet{} Running \textbullet{} Gaming
+\end{minipage} 
+\end{document}  \documentclass[]{article}
